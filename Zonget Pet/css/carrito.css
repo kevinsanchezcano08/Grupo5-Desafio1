@@ -141,6 +141,7 @@ img{
 /*Carrito de compras*/
 .CP{
   margin-top: 5%;
+  padding-bottom: 35px;
   position: relative;
   margin-left: 30%;
   border-bottom:  solid #70beec 5px;
