@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mascotas | Zonget Pet</title>
+        <link rel="stylesheet" href="css/Animales.css">
+    </head>
+    <body>
+        <header>
+            <nav class="navbar" id="menu">
+                <div class="content">
+                    <div class="logo">
+                    <a href="Dashboard.html"> <img src="img/Mascotas/Mascotas.png" width="150" height="50"></a>
+                    </div>
+                    <ul class="menu-list">
+                        <div class="icon cancel-btn">
+                            <i class="fas fa-times"></i>
+                        </div>
+                        <li><a href="Dashboard.html">Inicio</a></li>
+                        <li><a href="productos.html">Tienda</a></li>
+                        <li><a href="Animales.html">Mascotas</a></li>
+                        <li><a href="carrito.html">Carrito</a></li>
+                    </ul>
+                    <div class="icon menu-btn">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                </div>
+            </nav>
+            <script>
+                const body = document.querySelector("body");
+                const navbar = document.querySelector(".navbar");
+                const menuBtn = document.querySelector(".menu-btn");
+                const cancelBtn = document.querySelector(".cancel-btn");
+                menuBtn.onclick = () => {
+                    navbar.classList.add("show");
+                    menuBtn.classList.add("hide");
+                    body.classList.add("disabled");
+                }
+                cancelBtn.onclick = () => {
+                    body.classList.remove("disabled");
+                    navbar.classList.remove("show");
+                    menuBtn.classList.remove("hide");
+                }
+                window.onscroll = () => {
+                    this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+                }
+            </script>
+        </header>
+        <section>
+            <div class="contenedorinicial">
+            <div class="banner">
+                <div class="page">
+                    <h1>Informate más acerca <br> de la adopción</h1>
+                    <a href="#general_info">Ver más</a>
+                </div>
+                <div class="image">
+                    <img src="img/Tienda/bg1.png">
+                </div>
+            </div>
+            <div class="contenedor">
+                <div class="nana">
+                    <div id="general_info">
+                        <div class="section">
+                            <img src="img/dashboard/contenedor2.png" width="400px">
+                        </div>
+                        <div class="info">
+                            <h1>¿Adopción?</h1>
+                            <p>La adopción de animales es el proceso de tomar la responsabilidad de un animal que un dueño 
+                            previamente ha abandonado o dejado en un refugio de animales. Existe un gran número de lugares donde 
+                            se puede adoptar, tanto lugares físicos, como los refugios, como por internet, estos sitios web 
+                            tienen bases de datos de mascotas y animales albergados por personas y grupos de rescate y pueden 
+                            ser encontrados fácilmente.</p>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+            <div class="contenedorimage">
+                <div class="razones">
+                    <div class="inforazones">
+                        <h1>Razones para adoptar</h1>
+                        <p>Adoptar a un animal es una oportunidad para ti y una segunda oportunidad para él. 
+                        Una oportunidad para ti, porque darás hogar y cariño a un animal que ha sufrido la 
+                        aterradora experiencia del abandono y desamparo e incluso el maltrato, y aunque la 
+                        mayoría de animales que esperan en una jaula ser adoptados son sociables y confiados, 
+                        también los hay que debido a la terrible situación vivida tienen miedo o son asustadizos, 
+                        si te decides adoptarlos podrás vivir la maravillosa transformación de un animal traumatizado 
+                        que vuelve a recuperar la confianza.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contenedor">
+                <div class="refugiossv">
+                    <h1>Refugios salvadoreños</h1>
+                    <div class="container">
+                        <div class="refugio1">
+                            <img src="img/Mascotas/refugio1.png">
+                            <div class="info">
+                                <h2>PatitasSOS</h2>
+                                <p>La obra de rescatar perritos nació a principios del año 2017. Luego de 
+                                ver tantos casos de maltrato, abandono y enfermedades casi terminales, se 
+                                decidió empezar un proyecto para ayudar y darles una mejor calidad de vida.</p>
+                            </div>
+                        </div>
+                        <div class="refugio2">
+                            <img src="img/Mascotas/refugio2.jpg" >
+                            <div class="info">
+                                <h2>Fundación Patitas</h2>
+                                <p>Fundación Huellitas de El Salvador es una fundación sin fines de lucro 
+                                dedicada al rescate de animales abandonados, maltratados y con problemas 
+                                de salud.</p>
+                            </div>
+                        </div>
+                        <div class="refugio3">
+                            <img src="img/Mascotas/refugio3.jpg">
+                            <div class="info">
+                                <h2>Fundación CATDOT</h2>
+                                <p>Fundación CatDog es un hogar de mascotas desamparadas que inicio de un 
+                                grupo familiar, que por sus propios medios y recursos se dedico a realizar 
+                                el rescate de animales</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><footer>
+                <div class="container">
+                    <div class="row">
+                        <div class="footer-col-1">
+                            <h3>Zonget Pet</h3>
+                            <p>Nos encargamos de brindarte los mejores productos para el cuidado de tus mascotas.</p>
+                        </div>
+                        <div class="footer-col-2">
+                            <h3>Síguenos</h3>
+                            <ul>
+                                <li>Facebook</li>
+                                <li>Twitter</li>
+                                <li>Instagram</li>
+                                <li>YouTube</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <hr>
+                    <p class="copy"> Copyright 2021 - Zonget Pet</p>
+                </div>
+            </footer>
+            <script>
+                var MenuItems = document.getElementById("MenuItems");
+        
+                MenuItems.style.maxHeight = "0px";
+        
+                function menutoggle(){
+                    if(MenuItems.style.maxHeight == "0px"){
+                        MenuItems.style.maxHeight = "200px"
+                    }
+                    else{
+                        MenuItems.style.maxHeight = "0px"
+                    }
+                }
+            </script>
+
+        </section>
+        
+    </body>
+    
+</html>
